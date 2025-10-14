@@ -1,5 +1,6 @@
 import React from 'react';
 
+// About page: static information about the company. Keep copy short and scannable.
 function About() {
   return (
     <div className="about">

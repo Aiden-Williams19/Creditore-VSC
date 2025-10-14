@@ -1,8 +1,11 @@
 import React from 'react';
 
+// DebtReview page: explains the Debt Review product, the process and the benefits.
+// Keep this page informative and link to the contact page for conversions.
 function DebtReview() {
   return (
     <div className="service-page debt-review">
+      {/* Page heading should be a single H1 for semantic correctness */}
       <h1>Debt Review</h1>
 
       <section>
@@ -18,7 +21,8 @@ function DebtReview() {
           <li>You will still need to pay your instalments while under review.</li>
           <li>You will get assistance from a debt counsellor throughout the process.</li>
         </ul>
-        <img src="https://www.creditore.co.za/images/creditore-calculator.jpg" alt="Debt calculator" style={{maxWidth: '100%', height: 'auto'}} />
+        {/* Store service images locally or use optimized CDN links */}
+        <img src="/src/assets/creditore-calculator.jpg" alt="Debt calculator" style={{maxWidth: '100%', height: 'auto'}} />
       </section>
 
       <section>

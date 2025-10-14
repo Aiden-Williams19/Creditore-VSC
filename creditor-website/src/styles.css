@@ -1,3 +1,11 @@
+/*
+  styles.css
+  - Global styles and component-level rules for the Creditore website.
+  - Keep rules modular and sectioned (Navbar, Hero, Services, Who, Contact etc.).
+  - For large projects consider migrating repeated tokens (colors, spacing, fonts)
+    to a variables file or using a CSS preprocessor (Sass) or CSS-in-JS.
+*/
+
 /* Reset and global styles */
 body, html {
   margin: 0;

@@ -1,5 +1,6 @@
 import React from 'react';
 
+// DebtMediation page: outlines the mediation product. Keep copy concise and consistent with Debt Review page.
 function DebtMediation() {
   return (
     <div className="service-page debt-mediation">
@@ -13,7 +14,8 @@ function DebtMediation() {
         <p>
           We negotiate with your creditors to initiate a repayment plan. You pay one monthly instalment to the Payment Facilitation Agency (PFA), which then distributes the funds to your creditors.
         </p>
-        <img src="https://www.creditore.co.za/images/creditore-calculate.jpg" alt="Debt mediation" style={{maxWidth: '100%', height: 'auto'}} />
+        {/* Prefer local images (src/assets) to avoid hotlinking and ensure fast delivery */}
+        <img src="/src/assets/creditore-calculate.jpg" alt="Debt mediation" style={{maxWidth: '100%', height: 'auto'}} />
       </section>
 
       <section>
