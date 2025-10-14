@@ -4,7 +4,10 @@ function DebtReview() {
   return (
     <div className="service-page">
       <h1>Debt Review</h1>
-      <p>Debt Review is designed to help clients restructure and manage their debt safely while protecting them from legal action. Our experts guide you every step of the way.</p>
+      <p>
+        We are regulated and mandated by the NCR. We assist consumers by reducing their monthly debt commitments and providing a structured way to repay outstanding debts.
+      </p>
+      <p>Find out more or contact us to start the process.</p>
     </div>
   );
 }

@@ -4,7 +4,10 @@ function DebtMediation() {
   return (
     <div className="service-page">
       <h1>Debt Mediation</h1>
-      <p>Debt Mediation provides professional assistance in negotiating with creditors to find manageable solutions for repayment and reduce financial stress.</p>
+      <p>
+        We assist you by approaching your creditors and helping negotiate an affordable monthly payment plan on your behalf.
+      </p>
+      <p>Contact us to discuss your situation and we will prepare a tailored approach.</p>
     </div>
   );
 }
