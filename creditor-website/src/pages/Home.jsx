@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
 import ServiceCard from '../components/ServiceCard';
 import styles from './Home.module.css';
 
@@ -11,7 +12,7 @@ export default function Home() {
       {/* Floating social bar (WhatsApp + Facebook) */}
       <div className={styles.floatingSocial} aria-hidden>
         <a className={styles.whatsapp} href="https://wa.me/0027681120951" target="_blank" rel="noreferrer" aria-label="WhatsApp">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff"><path d="M20.5 3.5A11 11 0 1 0 12 23a11 11 0 0 0 8.5-19.5zM12 21c-1.9 0-3.7-.5-5.3-1.4l-3.1.8 1-3.1A9 9 0 1 1 21 12 8.9 8.9 0 0 1 12 21z"/></svg>
+          <FaWhatsapp size={20} color="#fff" />
         </a>
         <a className={styles.facebook} href="https://www.facebook.com/creditoredebt" target="_blank" rel="noreferrer" aria-label="Facebook">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12z"/></svg>
