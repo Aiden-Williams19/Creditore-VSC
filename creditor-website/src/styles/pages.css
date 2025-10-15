@@ -38,3 +38,35 @@
 .team{padding:3rem 2rem;text-align:center}
 .team h2{font-size:2rem;margin-bottom:1rem}
 
+/* Service pages (Debt Review / Debt Mediation) */
+.service-hero{
+  padding:3rem 0;background:linear-gradient(90deg,var(--brand-blue),#0d6efd);color:#fff
+}
+.service-hero .container{max-width:1100px;margin:0 auto;padding:0 1rem}
+.service-hero h1{font-size:2.25rem;margin:0 0 .5rem}
+.service-hero .lead{font-size:1.1rem;opacity:.95}
+
+.service-content.container{display:grid;grid-template-columns:1fr 320px;gap:2.5rem;align-items:start;padding:3rem 1rem}
+.service-main{background:transparent}
+.service-main article{background:#fff;padding:1.5rem;border-radius:10px;margin-bottom:1.25rem;box-shadow:0 6px 18px rgba(16,24,40,.06)}
+.service-main h2{margin-top:0}
+
+.service-aside{position:sticky;top:88px}
+.contact-box{background:linear-gradient(180deg,#fff,#f8fafc);padding:1.5rem;border-radius:10px;box-shadow:0 6px 18px rgba(16,24,40,.06);text-align:center}
+.contact-box h3{margin:0 0 .5rem}
+.contact-box .muted{color:#6b7280;margin-bottom:.75rem}
+.contact-box .large{font-size:1.1rem}
+.contact-box .btn{margin-top:1rem}
+
+.quick-facts{background:#fff;padding:1rem;border-radius:10px;margin-top:1rem;box-shadow:0 6px 18px rgba(16,24,40,.04)}
+.quick-facts h4{margin:0 0 .5rem}
+.quick-facts ul{margin:0;padding-left:1.1rem}
+
+.feature-list{padding-left:1.1rem}
+.process-steps{padding-left:1.1rem}
+
+@media (max-width: 992px){
+  .service-content.container{grid-template-columns:1fr;}
+  .service-aside{position:static}
+}
+

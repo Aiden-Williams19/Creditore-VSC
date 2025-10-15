@@ -1,58 +1,64 @@
 import React from 'react';
 
-// DebtMediation page: outlines the mediation product. Keep copy concise and consistent with Debt Review page.
 function DebtMediation() {
   return (
     <div className="service-page debt-mediation">
-      <h1>Debt Mediation</h1>
-
-      <section>
-        <h2>What is Debt Mediation?</h2>
-        <p>
-          Debt Mediation (also known as Debt Management or Dispute Resolution) is a solution for South Africans who are struggling to make debt repayments but are not yet classified as over-indebted.
-        </p>
-        <p>
-          We negotiate with your creditors to initiate a repayment plan. You pay one monthly instalment to the Payment Facilitation Agency (PFA), which then distributes the funds to your creditors.
-        </p>
-        {/* Prefer local images (src/assets) to avoid hotlinking and ensure fast delivery */}
-        <img src="/src/assets/creditore-calculate.jpg" alt="Debt mediation" style={{maxWidth: '100%', height: 'auto'}} />
+      <section className="service-hero">
+        <div className="container">
+          <h1>Debt Mediation</h1>
+          <p className="lead">Debt Mediation helps you negotiate affordable repayments before you become over-indebted and gives you a clear payment track to manage creditors.</p>
+        </div>
       </section>
 
-      <section>
-        <h2>The Process</h2>
-        <ol>
-          <li>Complete a free debt assessment to see if you qualify.</li>
-          <li>If you qualify, send us your application.</li>
-          <li>Get a new budget and have your payment plan restructured.</li>
-          <li>Begin to pay your new lower monthly instalments.</li>
-        </ol>
-      </section>
+      <section className="service-content container">
+        <main className="service-main">
+          <article>
+            <h2>What is Debt Mediation?</h2>
+            <p>
+              Debt Mediation (sometimes called Debt Management) is a non-court solution where we negotiate with creditors to agree a manageable repayment plan.
+              Payments are consolidated and distributed by a Payment Facilitation Agency where applicable.
+            </p>
 
-      <section>
-        <h2>What You Get</h2>
-        <ul>
-          <li>A free debt assessment before applying.</li>
-          <li>A full debt assessment after applying.</li>
-          <li>A reckless lending investigation.</li>
-          <li>A debt payment restructuring plan.</li>
-          <li>A new affordable monthly budget.</li>
-          <li>Access to recommended attorneys where needed.</li>
-          <li>Protection against harassment from credit providers.</li>
-          <li>Protection for your assets against repossession.</li>
-          <li>Monthly aftercare until you are debt free.</li>
-        </ul>
-      </section>
+            <h3>Typical process</h3>
+            <ol className="process-steps">
+              <li>Complete a quick assessment to check suitability.</li>
+              <li>Submit documents and allow us to negotiate with creditors.</li>
+              <li>Agree a consolidated monthly payment that works for you.</li>
+              <li>Start your new payment schedule and receive ongoing support.</li>
+            </ol>
+          </article>
 
-      <section>
-        <h2>Who we help</h2>
-        <p>We can help South African consumers with a stable income who have debt in the form of home loans, vehicle finance, credit cards, micro loans or personal loans.</p>
-      </section>
+          <article>
+            <h2>What you get</h2>
+            <ul className="feature-list">
+              <li>A free assessment and transparent fees.</li>
+              <li>Assistance to negotiate with multiple creditors.</li>
+              <li>Monthly statements and aftercare support.</li>
+              <li>Referral to legal support when needed.</li>
+            </ul>
+          </article>
+        </main>
 
-      <section>
-        <h2>Contact</h2>
-        <p><strong>Phone:</strong> 021 569 6571</p>
-        <p><strong>WhatsApp:</strong> 068 112 0951</p>
-        <p><strong>Email:</strong> info@creditore.co.za</p>
+        <aside className="service-aside" aria-label="Contact box">
+          <div className="contact-box">
+            <h3>Need help now?</h3>
+            <p className="muted">Call or WhatsApp our team for a free chat.</p>
+            <p className="large">Call: <strong>021 569 6571</strong></p>
+            <p className="large">WhatsApp: <strong>068 112 0951</strong></p>
+            <a className="btn primary" href="/contact">Start Application</a>
+          </div>
+
+          <div className="quick-facts">
+            <h4>Eligible debts</h4>
+            <ul>
+              <li>Home loans</li>
+              <li>Vehicle finance</li>
+              <li>Credit cards</li>
+              <li>Micro loans</li>
+              <li>Personal loans</li>
+            </ul>
+          </div>
+        </aside>
       </section>
     </div>
   );
