@@ -1,25 +1,38 @@
 import React from 'react';
 import ServiceCard from '../components/ServiceCard';
+import styles from './Home.module.css';
 
-// Top-level Home page component. Contains hero, services, who, steps, team and regulatory sections.
-// Keep this component simple and semantic for accessibility and SEO.
-function Home() {
+// Resolve asset at runtime so Vite can find it in dev and build
+const whoImg = new URL('../assets/creditore6.jpg', import.meta.url).href;
+
+export default function Home() {
   return (
     <div className="home">
-      {/* HERO: Main page introduction and primary CTAs. Keep text concise for SEO and screen readers. */}
-      <header className="hero">
-        <h1>Restore Your Credit</h1>
-        <p className="hero-sub">Professional, reliable and tailor-made debt restructuring solutions that help you restore your credit and your life.</p>
-        <div className="hero-ctas">
-          {/* Phone link uses tel: so mobile devices can dial directly. WhatsApp opens in a new tab. */}
-          <a className="btn primary" href="tel:0215696571">Call Us: 021 569 6571</a>
-          <a className="btn" href="https://wa.me/0027681120951" target="_blank" rel="noreferrer">WhatsApp</a>
-          <a className="btn" href="/contact">Contact Form</a>
+      {/* Floating social bar (WhatsApp + Facebook) */}
+      <div className={styles.floatingSocial} aria-hidden>
+        <a className={styles.whatsapp} href="https://wa.me/0027681120951" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff"><path d="M20.5 3.5A11 11 0 1 0 12 23a11 11 0 0 0 8.5-19.5zM12 21c-1.9 0-3.7-.5-5.3-1.4l-3.1.8 1-3.1A9 9 0 1 1 21 12 8.9 8.9 0 0 1 12 21z"/></svg>
+        </a>
+        <a className={styles.facebook} href="https://www.facebook.com/creditoredebt" target="_blank" rel="noreferrer" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="#fff"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2.3c0-2 1.2-3.1 3-3.1.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.2V12h2.2l-.4 3h-1.8v7A10 10 0 0 0 22 12z"/></svg>
+        </a>
+      </div>
+
+      {/* HERO */}
+      <header className={styles.hero} style={{ backgroundImage: `url(${whoImg})` }}>
+        <div className={styles.heroOverlay}>
+          <h1 className={styles.heroTitle}>Restore Your Credit</h1>
+          <p className={styles.heroSub}>Professional, reliable and tailor-made debt restructuring solutions that help you restore your credit and your life.</p>
+          <div className={styles.heroCtas}>
+            <a className="btn primary" href="tel:0215696571">Call Us: 021 569 6571</a>
+            <a className="btn primary" href="https://wa.me/0027681120951" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a className="btn primary" href="/contact">Contact Form</a>
+          </div>
         </div>
       </header>
 
+      {/* SERVICES */}
       <section className="services">
-        {/* SERVICES: Brief intro and list of service cards. Keep descriptions short and linkable for internal navigation. */}
         <h2>Our Services</h2>
         <p>Professional, reliable and tailor made debt restructuring solutions that help you restore your credit.</p>
         <div className="service-list">
@@ -36,55 +49,76 @@ function Home() {
         </div>
       </section>
 
-      {/* WHO: Company overview and services list. This section should be clear and easy to read on mobile. */}
-      <section className="who">
-        <h2>Who We Are</h2>
-        <p>
-          CREDITORE (Credit – Restore) is a Cape Town-based consultancy that specialises in debt restructuring products aimed at consumers who are over-indebted and struggling to meet their monthly debt commitments.
-        </p>
-        <p>We help with:</p>
-        <ul className="loan-types">
-          <li>Home loan</li>
-          <li>Vehicle finance</li>
-          <li>Credit cards</li>
-          <li>Micro loans</li>
-          <li>Personal loans</li>
-        </ul>
-        {/* Image should be stored locally in src/assets for reliability; see /scripts/fetch-images.js */}
-        <img src="/src/assets/creditore6.jpg" alt="Creditore" style={{maxWidth: '100%', height: 'auto'}} />
-      </section>
+      {/* WHO */}
+      <section className={styles.whoSection}>
+        <div className={styles.whoGrid}>
+          <div className={styles.whoLeft}>
+            <h2 className={styles.whoTitle}>WHO WE ARE</h2>
+            <p className={styles.whoDesc}>
+              CREDITORE (Credit – Restore) is a Cape Town-based consultancy that specialises in debt restructuring products aimed at consumers who are over-indebted and struggling to meet their monthly debt commitments. We work with you to find sustainable repayment plans and restore your financial standing.
+            </p>
 
-      {/* STEPS: Explain the process in short, scannable steps for users and search engines. */}
-      <section className="steps">
-        <h2>How it works</h2>
-        <div className="steps-grid">
-          <div className="step"><h3>Step 1</h3><p>Gather information — getting to know our clients to ensure the best service.</p></div>
-          <div className="step"><h3>Step 2</h3><p>Put together a proposal based on your information provided.</p></div>
-          <div className="step"><h3>Step 3</h3><p>Provide you with a solution.</p></div>
-          <div className="step"><h3>Step 4</h3><p>Implement solutions.</p></div>
-          <div className="step"><h3>Step 5</h3><p>Review your solutions to make sure the best options were put in place for your personal needs.</p></div>
+            <ul className={styles.whoList}>
+              <li className={styles.whoListItem}><span className={styles.whoListIcon}>✓</span><span>Home loan</span></li>
+              <li className={styles.whoListItem}><span className={styles.whoListIcon}>✓</span><span>Vehicle finance</span></li>
+              <li className={styles.whoListItem}><span className={styles.whoListIcon}>✓</span><span>Credit cards</span></li>
+              <li className={styles.whoListItem}><span className={styles.whoListIcon}>✓</span><span>Micro loans</span></li>
+              <li className={styles.whoListItem}><span className={styles.whoListIcon}>✓</span><span>Personal loans</span></li>
+            </ul>
+
+            <div className={styles.whoActions}>
+              <a className="btn primary" href="/contact">Get a Free Consultation</a>
+              <a className="btn" href="/debt-review">Learn More</a>
+            </div>
+          </div>
+
+          <div className={styles.whoRight}>
+            <img src={whoImg} alt="Two clients in a consultation" className={styles.whoImg} />
+          </div>
         </div>
       </section>
 
-      {/* TEAM: short CTA and contact info. Keep contact info up-to-date in one place (e.g., constants or environment) */}
-      <section className="team">
-        <h2>Our Team</h2>
-        <p>Our team of accredited professionals are standing by to usher you into a brighter financial future.</p>
-        <p className="team-cta">Are you looking for professional financial advice that works for you?</p>
-        <a className="btn primary" href="/contact">CONTACT US</a>
-        <p className="call-us">CALL US: <strong>021 569 6571</strong></p>
+      {/* STEPS */}
+      <section className={styles.stepsSection}>
+        <h2 className={styles.sectionTitle}>How it works</h2>
+        <div className={styles.stepsGrid}>
+          {[1,2,3,4,5].map(n => (
+            <div key={n} className={styles.step}>
+              <div className={styles.stepIcon} aria-hidden>
+                <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="11" fill="#1f9d55"/></svg>
+              </div>
+              <h3>Step {n}</h3>
+              <p>Step {n} description — brief, clear and actionable.</p>
+            </div>
+          ))}
+        </div>
       </section>
 
-      {/* REGULATORY: Compliance and social links. Keep regulatory text concise. */}
-      <section className="regulatory">
-        <p>We are regulated by the NCR.</p>
-        <p className="social">
-          <a href="https://wa.me/0027681120951" target="_blank" rel="noreferrer">WhatsApp</a> ·
-          <a href="https://www.facebook.com/creditoredebt" target="_blank" rel="noreferrer">Facebook</a>
-        </p>
+      {/* TEAM */}
+      <section className={styles.teamSection}>
+        <div className={styles.teamInner}>
+          <div>
+            <h2 className={styles.sectionTitle}>Our Team</h2>
+            <p>Our accredited professionals provide compassionate, practical and compliant debt solutions. We combine industry experience with a focus on client outcomes.</p>
+            <p className={styles.teamCta}>Looking for professional financial advice that actually works?</p>
+            <a className="btn primary" href="/contact">CONTACT US</a>
+          </div>
+          <div className={styles.teamStats}>
+            <div className={styles.stat}><strong>10+</strong><span>Years' experience</span></div>
+            <div className={styles.stat}><strong>5k+</strong><span>Clients supported</span></div>
+            <div className={styles.stat}><strong>100%</strong><span>Regulated & compliant</span></div>
+          </div>
+        </div>
+      </section>
+
+      {/* REGULATORY */}
+      <section className={styles.regulatory}>
+        <p className={styles.regText}>We are regulated by the <strong>NCR</strong>. We adhere to all statutory requirements and place client welfare first.</p>
+        <div className={styles.socialLinks}>
+          <a href="https://wa.me/0027681120951" target="_blank" rel="noreferrer" aria-label="WhatsApp" className={`${styles.socialLink} ${styles.whatsapp}`}>WhatsApp</a>
+          <a href="https://www.facebook.com/creditoredebt" target="_blank" rel="noreferrer" aria-label="Facebook" className={`${styles.socialLink} ${styles.facebook}`}>Facebook</a>
+        </div>
       </section>
     </div>
   );
 }
-
-export default Home;
