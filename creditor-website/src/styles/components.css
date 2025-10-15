@@ -1,0 +1,19 @@
+/* components.css - reusable components (cards, buttons, forms) */
+
+/* Buttons */
+.btn.primary{background:var(--brand-blue);color:#fff}
+.btn.primary:hover{background:#003a8c}
+
+/* Service Card */
+.service-card{background:#fff;padding:1.5rem;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.08);transition:transform .3s,box-shadow .3s}
+.service-card:hover{transform:translateY(-5px);box-shadow:0 6px 20px rgba(0,0,0,.12)}
+.service-card .btn{display:inline-block;margin-top:1rem;padding:.5rem 1rem;background:var(--brand-blue);color:#fff;border-radius:5px;text-decoration:none;font-size:.9rem}
+.service-card .btn:hover{background:#003a8c}
+
+/* Forms */
+.contact-form{max-width:600px;margin:2rem auto;background:#fff;padding:2rem;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,.08)}
+.contact-form label{display:block;font-weight:700;margin-bottom:.5rem;color:#333}
+.contact-form input,.contact-form textarea{width:100%;padding:.75rem;margin-bottom:1rem;border:1px solid #ccc;border-radius:5px;font-size:1rem}
+.contact-form input:focus,.contact-form textarea:focus{border-color:var(--brand-blue);outline:none}
+.contact-form button{display:inline-block;padding:.75rem 1.5rem;background:var(--brand-blue);color:#fff;border:none;border-radius:5px;font-weight:700}
+

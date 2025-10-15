@@ -1,0 +1,23 @@
+/* layout.css - layout primitives (navbar, footer, grid systems) */
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--brand-blue);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo img{height:50px}
+.navbar .nav-links{display:flex;list-style:none}
+.navbar .nav-links li{margin-left:1.5rem}
+.navbar .nav-links li a{color:#fff;text-decoration:none;font-weight:500;transition:color .3s}
+.navbar .nav-links li a:hover{color:var(--brand-accent)}
+
+/* Footer */
+footer{ text-align:center;padding:1.5rem;background:var(--brand-blue);color:#fff;margin-top:2rem;font-size:.9rem}
+
