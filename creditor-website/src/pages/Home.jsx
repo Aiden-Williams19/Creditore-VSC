@@ -3,8 +3,10 @@ import { FaWhatsapp } from 'react-icons/fa';
 import ServiceCard from '../components/ServiceCard';
 import styles from './Home.module.css';
 
-// Resolve asset at runtime so Vite can find it in dev and build
+// Resolve assets at runtime so Vite can find them in dev and build
 const whoImg = new URL('../assets/creditore6.jpg', import.meta.url).href;
+const debtReviewImg = new URL('../assets/creditore6.jpg', import.meta.url).href;
+const debtMediationImg = new URL('../assets/creditore6.jpg', import.meta.url).href;
 
 export default function Home() {
   return (
@@ -41,11 +43,13 @@ export default function Home() {
             title="Debt Review"
             description="We are regulated and mandated by the NCR. We assist consumers by reducing their monthly debt commitments."
             link="/debt-review"
+            image={debtReviewImg}
           />
           <ServiceCard
             title="Debt Mediation"
             description="We assist by approaching creditors and arranging affordable monthly payments."
             link="/debt-mediation"
+            image={debtMediationImg}
           />
         </div>
       </section>

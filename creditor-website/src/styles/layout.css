@@ -18,6 +18,51 @@
 .navbar .nav-links li a{color:#fff;text-decoration:none;font-weight:500;transition:color .3s}
 .navbar .nav-links li a:hover{color:var(--brand-accent)}
 
+/* Mobile hamburger */
+.nav-toggle{display:none;background:transparent;border:0;cursor:pointer;width:44px;height:44px;align-items:center;justify-content:center}
+.nav-toggle .bar{display:block;width:22px;height:2px;background:#fff;margin:4px auto;transition:transform .25s ease, opacity .25s}
+.nav-toggle.open .bar:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.nav-toggle.open .bar:nth-child(2){opacity:0}
+.nav-toggle.open .bar:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* Mobile menu hidden by default */
+.nav-links.open{display:flex}
+
+@media (max-width: 900px) {
+  .navbar{padding:0.6rem 1rem}
+  .nav-toggle{display:flex}
+
+  /* Dropdown (compact) mobile menu: positioned under the navbar, doesn't cover the whole screen */
+  .nav-links{
+    position:absolute;
+    top:100%;
+    right:1rem;
+    width:260px;
+    max-height:calc(80vh - 64px);
+    overflow:auto;
+    flex-direction:column;
+    background:var(--brand-blue);
+    padding:12px;
+    border-radius:8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    transform-origin: top right;
+    transform: translateY(-6px) scaleY(0);
+    opacity:0;
+    transition: transform .22s ease, opacity .22s ease;
+    pointer-events:none;
+    z-index:1200;
+  }
+  .nav-links.open{transform:translateY(0) scaleY(1);opacity:1;pointer-events:auto}
+
+  .nav-links li{margin:10px 0}
+  .nav-links li a{font-size:1rem}
+  .navbar .logo img{height:44px}
+}
+
+@media (max-width: 480px) {
+  .nav-links{width:100%;right:0}
+}
+
 /* Footer */
 footer{ text-align:center;padding:1.5rem;background:var(--brand-blue);color:#fff;margin-top:2rem;font-size:.9rem}
 

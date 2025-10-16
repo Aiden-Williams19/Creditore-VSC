@@ -1,15 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/react.svg';
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="logo">
         {/* Logo is imported as an asset so the build pipeline can optimize and fingerprint it */}
         <img src={logo} alt="Creditor Logo" />
       </div>
-      <ul className="nav-links">
+
+      {/* Mobile hamburger button */}
+      <button
+        className={`nav-toggle ${open ? 'open' : ''}`}
+        aria-expanded={open}
+        aria-label={open ? 'Close navigation' : 'Open navigation'}
+        onClick={() => setOpen(prev => !prev)}
+      >
+        <span className="bar" aria-hidden></span>
+        <span className="bar" aria-hidden></span>
+        <span className="bar" aria-hidden></span>
+      </button>
+
+      <ul className={`nav-links ${open ? 'open' : ''}`} onClick={() => setOpen(false)}>
         {/* Use react-router <Link> for internal navigation to prevent full page reloads */}
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About Us</Link></li>
