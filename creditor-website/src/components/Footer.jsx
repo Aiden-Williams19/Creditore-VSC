@@ -12,13 +12,7 @@ function Footer() {
           <p>Email: info@creditore.co.za</p>
           <p>We are regulated by the NCR.</p>
         </div>
-        <div className="footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="/debt-review">Debt Review</a></li>
-            <li><a href="/debt-mediation">Debt Mediation</a></li>
-          </ul>
-        </div>
+        {/* services links removed per request */}
       </div>
     </footer>
   );
