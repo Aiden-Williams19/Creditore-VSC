@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaWhatsapp } from 'react-icons/fa';
 import ServiceCard from '../components/ServiceCard';
 import styles from './Home.module.css';
@@ -29,7 +30,7 @@ export default function Home() {
           <div className={styles.heroCtas}>
             <a className="btn primary" href="tel:0215696571">Call Us: 021 569 6571</a>
             <a className="btn primary" href="https://wa.me/0027681120951" target="_blank" rel="noreferrer">WhatsApp</a>
-            <a className="btn primary" href="/contact">Contact Form</a>
+            <Link className="btn primary" to="/contact">Contact Form</Link>
           </div>
         </div>
       </header>
@@ -60,7 +61,7 @@ export default function Home() {
           <div className={styles.whoLeft}>
             <h2 className={styles.whoTitle}>WHO WE ARE</h2>
             <p className={styles.whoDesc}>
-              CREDITORE (Credit – Restore) is a Cape Town-based consultancy that specialises in debt restructuring products aimed at consumers who are over-indebted and struggling to meet their monthly debt commitments. We work with you to find sustainable repayment plans and restore your financial standing.
+              <Link className="btn primary" to="/contact">Contact Form</Link>
             </p>
 
             <ul className={styles.whoList}>
@@ -72,8 +73,8 @@ export default function Home() {
             </ul>
 
             <div className={styles.whoActions}>
-              <a className="btn primary" href="/contact">Get a Free Consultation</a>
-              <a className="btn" href="/debt-review">Learn More</a>
+              <Link className="btn primary" to="/contact">Get a Free Consultation</Link>
+              <Link className="btn" to="/debt-review">Learn More</Link>
             </div>
           </div>
 

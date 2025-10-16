@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function DebtMediation() {
   return (
@@ -45,7 +46,7 @@ function DebtMediation() {
             <p className="muted">Call or WhatsApp our team for a free chat.</p>
             <p className="large">Call: <strong>021 569 6571</strong></p>
             <p className="large">WhatsApp: <strong>068 112 0951</strong></p>
-            <a className="btn primary" href="/contact">Start Application</a>
+            <Link className="btn primary" to="/contact">Start Application</Link>
           </div>
 
           <div className="quick-facts">

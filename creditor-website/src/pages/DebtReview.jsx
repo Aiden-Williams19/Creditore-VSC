@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Resolve local asset so Vite can fingerprint it in production
 const calculatorImg = new URL('../assets/creditore-calculator.jpg', import.meta.url).href;
@@ -67,7 +68,7 @@ function DebtReview() {
             <p className="muted">Simple, confidential and obligation-free.</p>
             <p className="large">Call: <strong>021 569 6571</strong></p>
             <p className="large">WhatsApp: <strong>068 112 0951</strong></p>
-            <a className="btn primary" href="/contact">Start Application</a>
+            <Link className="btn primary" to="/contact">Start Application</Link>
           </div>
 
           <div className="quick-facts">
