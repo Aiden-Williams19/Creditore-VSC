@@ -13,10 +13,32 @@
 }
 
 .navbar .logo img{height:50px}
-.navbar .nav-links{display:flex;list-style:none}
-.navbar .nav-links li{margin-left:1.5rem}
+.navbar .nav-links{display:flex;list-style:none;align-items:center}
+.navbar .nav-links li{margin-left:1.2rem}
 .navbar .nav-links li a{color:#fff;text-decoration:none;font-weight:500;transition:color .3s}
 .navbar .nav-links li a:hover{color:var(--brand-accent)}
+
+/* Dropdown styles for Services */
+.dropdown{position:relative}
+.dropdown-toggle{background:transparent;border:0;color:#fff;font-weight:500;cursor:pointer;font-size:1rem;padding:0}
+.dropdown-menu{position:absolute;top:100%;left:0;background:linear-gradient(180deg,var(--brand-blue),#0d6efd);color:#fff;border-radius:6px;padding:8px 0;min-width:220px;box-shadow:0 8px 30px rgba(0,0,0,0.12);transform:translateY(-6px) scale(.98);opacity:0;pointer-events:none;transition:all .18s}
+.dropdown-menu.open,.dropdown:hover .dropdown-menu{transform:translateY(0) scale(1);opacity:1;pointer-events:auto}
+.dropdown-menu li{list-style:none}
+.dropdown-menu li a{display:block;padding:8px 16px;color:#fff;text-decoration:none}
+.dropdown-menu li a:hover{background:rgba(255,255,255,0.06)}
+
+/* CTA / icons alignment */
+.nav-cta .btn{padding:.5rem .9rem}
+.nav-icons{display:flex;gap:.6rem;align-items:center}
+.nav-icons a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,0.08)}
+
+/* Make dropdown visually match brand on desktop: blue header with white links */
+.dropdown-menu.brand {
+  background: linear-gradient(180deg, var(--brand-blue), #0d6efd);
+  color: #fff;
+}
+.dropdown-menu.brand li a{color:#fff}
+.dropdown-menu.brand li a:hover{background:rgba(255,255,255,0.06)}
 
 /* Mobile hamburger */
 .nav-toggle{display:none;background:transparent;border:0;cursor:pointer;width:44px;height:44px;align-items:center;justify-content:center}
@@ -54,9 +76,24 @@
   }
   .nav-links.open{transform:translateY(0) scaleY(1);opacity:1;pointer-events:auto}
 
+  /* Ensure dropdown menu shows inline within the mobile nav (not absolute) */
+  /* Mobile: dropdown menus should render inline and be toggled explicitly */
+  .dropdown-menu{position:static;transform:none;opacity:1;pointer-events:auto;background:transparent;box-shadow:none;padding:0;min-width:0;display:none}
+  .dropdown-menu li a{color:#fff;padding:10px 0}
+  /* When Services is toggled on mobile, ensure its menu is visible */
+  .dropdown-menu.open{display:block}
+
   .nav-links li{margin:10px 0}
   .nav-links li a{font-size:1rem}
   .navbar .logo img{height:44px}
+
+  /* Hide desktop-specific top-level service links on mobile so they appear only under Services */
+  .nav-links > li > a[href="/debt-review"],
+  .nav-links > li > a[href="/debt-mediation"],
+  .nav-links > li > a[href="/debt-review/"],
+  .nav-links > li > a[href="/debt-mediation/"] {
+    display: none !important;
+  }
 }
 
 @media (max-width: 480px) {
