@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Resolve local asset so Vite can fingerprint it in production
+const calculatorImg = new URL('../assets/creditore-calculator.jpg', import.meta.url).href;
+
 function DebtReview() {
   return (
     <div className="service-page debt-review">
@@ -31,7 +34,7 @@ function DebtReview() {
             </ul>
 
             <figure className="service-image">
-              <img src="/src/assets/creditore-calculator.jpg" alt="Debt calculator" />
+              <img src={calculatorImg} alt="Debt calculator" />
               <figcaption className="sr-only">Debt assessment illustration</figcaption>
             </figure>
           </article>
