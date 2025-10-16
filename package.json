@@ -5,6 +5,7 @@
     "dev": "cd creditor-website && npm run dev",
     "start": "cd creditor-website && npm run dev"
   },
+  "postinstall": "cd creditor-website && npm install",
   "dependencies": {
     "react-router-dom": "^7.9.4"
   }
