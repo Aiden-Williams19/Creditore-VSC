@@ -1,4 +1,10 @@
 {
+  "private": true,
+  "scripts": {
+    "build": "cd creditor-website && npm run build",
+    "dev": "cd creditor-website && npm run dev",
+    "start": "cd creditor-website && npm run dev"
+  },
   "dependencies": {
     "react-router-dom": "^7.9.4"
   }
