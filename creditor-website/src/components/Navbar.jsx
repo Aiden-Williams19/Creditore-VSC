@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../assets/react.svg';
+import logo from '../assets/creditore-logo.png';
 import { FaPhoneAlt, FaWhatsapp } from 'react-icons/fa';
 
 function Navbar() {
