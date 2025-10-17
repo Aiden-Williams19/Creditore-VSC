@@ -21,7 +21,9 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="logo">
-        <img src={logo} alt="Creditor Logo" />
+        <Link to="/" aria-label="Go to home">
+          <img src={logo} alt="Creditor Logo" />
+        </Link>
       </div>
 
       {/* Mobile hamburger button */}
