@@ -60,11 +60,15 @@ export default function Home() {
         <div className={styles.whoGrid}>
           <div className={styles.whoLeft}>
             <h2 className={styles.whoTitle}>WHO WE ARE</h2>
-            <p className={styles.whoDesc}>
-              <Link className="btn primary" to="/contact">Contact Form</Link>
-            </p>
+              <p className={styles.whoDesc}>
+                Creditore is a Cape Town–based consultancy dedicated to helping individuals overwhelmed by debt regain control, stability and peace of mind. We provide personalised debt restructuring, negotiate with creditors on your behalf and design repayment plans that work with your budget and circumstances.
+              </p>
+              <p className={styles.whoDesc}>
+                Our mission is to empower clients through transparent, compliant and compassionate service — restoring credit health and financial dignity one account at a time. <Link to="/about">Learn more about us</Link> or <Link className="btn primary" to="/contact">contact us</Link> for a free assessment.
+              </p>
 
-            <ul className={styles.whoList}>
+              <h3 className={styles.whoListTitle}>What we help with ?</h3>
+              <ul className={styles.whoList}>
               <li className={styles.whoListItem}><span className={styles.whoListIcon}>✓</span><span>Home loan</span></li>
               <li className={styles.whoListItem}><span className={styles.whoListIcon}>✓</span><span>Vehicle finance</span></li>
               <li className={styles.whoListItem}><span className={styles.whoListIcon}>✓</span><span>Credit cards</span></li>
