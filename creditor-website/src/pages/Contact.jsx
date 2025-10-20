@@ -32,26 +32,37 @@ function ContactForm() {
     e.preventDefault();
     setSubmitting(true);
     setError(null);
-
     try {
+      // Use FormData so browsers set proper multipart boundary (more reliable for some endpoints)
+      const fd = new FormData();
+      fd.append('name', form.name);
+      fd.append('email', form.email);
+      fd.append('message', form.message);
+
       const res = await fetch('https://formspree.io/f/mqayoebq', {
         method: 'POST',
-        headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        headers: { 'Accept': 'application/json' },
+        body: fd,
       });
 
-      const data = await res.json().catch(() => ({}));
+      // Try to parse JSON response for clarity
+      let data = {};
+      try { data = await res.json(); } catch (e) { /* ignore parse errors */ }
+
       if (res.ok) {
+        // Formspree sometimes returns 200/202 even when it queues the message — treat as success
         setSucceeded(true);
         setForm({ name: '', email: '', message: '' });
       } else {
-        setError(data.error || data.message || 'Submission failed. Please try again.');
+        // Preserve input values on error so user can retry
+        const serverMsg = data.error || data.message || (data.errors && data.errors.map(err => err.message).join(', '));
+        setError(serverMsg || `Submission failed (status ${res.status}). Please try again.`);
       }
     } catch (err) {
       setError(err.message || 'Network error. Please try again.');
+    } finally {
+      setSubmitting(false);
     }
-
-    setSubmitting(false);
   }
 
   if (succeeded) {
