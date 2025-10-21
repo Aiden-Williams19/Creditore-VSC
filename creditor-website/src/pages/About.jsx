@@ -7,8 +7,8 @@ function About() {
     <>
       <section className="service-hero">
         <div className="container">
-          <h1>About Creditore</h1>
-          <p className="lead">Restoring Financial Dignity, One Account at a Time</p>
+          <h1>About Creditore Debt Counselling</h1>
+          <p className="lead">Founded in 2020 — Compassionate, professional debt solutions for South Africans</p>
         </div>
       </section>
 
@@ -16,72 +16,69 @@ function About() {
         <main className="service-main">
           <article>
             <h2>Who We Are</h2>
-            <p>
-              Creditore (Credit – Restore) is a Cape Town–based consultancy dedicated to helping individuals overwhelmed by debt regain control, stability, and peace of mind. With a focus on integrity, transparency, and personal attention, we partner with clients to navigate the maze of credit obligations and find sustainable solutions.
-            </p>
+            <p>Creditore Debt Counselling has proudly served South Africans for over five years, helping individuals and families take control of their finances and rebuild their lives through the Debt Review process. We guide clients with compassion, honesty, and professionalism.</p>
           </article>
 
           <article>
             <h2>Our Mission</h2>
-            <p>
-              To empower South Africans struggling with debt to reclaim their financial footing. We believe that every person deserves fair treatment, breathing room, and a path toward financial wellness—not endless stress and uncertainty.
-            </p>
+            <p>To help over-indebted South Africans regain financial stability, protect their assets, and achieve lasting peace of mind—without judgment or shame.</p>
           </article>
 
           <article>
-            <h2>What We Do</h2>
-            <p>
-              We offer holistic debt restructuring and counselling services to those burdened by multiple debt commitments. Our specialty is negotiating favourable terms with creditors, consolidating liabilities, and building repayment strategies that work for your budget.
-            </p>
-            <p>We assist clients with debts arising from:</p>
+            <h2>Our Promise to You</h2>
             <ul>
-              <li>Home loans</li>
-              <li>Vehicle finance</li>
-              <li>Credit cards</li>
-              <li>Microloans</li>
-              <li>Personal loans</li>
+              <li>Honest, transparent financial advice</li>
+              <li>No hidden fees or false promises</li>
+              <li>Respectful, confidential, and professional service</li>
+              <li>A dedicated debt counsellor who supports you every step of the way</li>
             </ul>
+          </article>
+
+          <article>
+            <h2>Our Vision</h2>
+            <p>To see every South African family experience financial freedom, confidence, and hope—one successful case at a time.</p>
           </article>
 
           <article>
             <h2>How We Work</h2>
             <ol>
-              <li><strong>Initial Consultation</strong> – We assess your complete debt profile and listen to your challenges.</li>
-              <li><strong>Financial Analysis</strong> – We map out income, expenses, liabilities, and determine your realistic capacity.</li>
-              <li><strong>Negotiation</strong> – We approach credit providers, seeking lower interest, extended terms, or restructuring.</li>
-              <li><strong>Implementation</strong> – We help set up revised repayment schedules, consolidate where possible, and ensure compliance.</li>
-              <li><strong>Monitoring & Support</strong> – We stay involved, offering guidance and making adjustments as life circumstances change.</li>
+              <li><strong>Free Assessment</strong> – We start with a quick, confidential chat to see if you qualify for Debt Review.</li>
+              <li><strong>Proposal to Creditors</strong> – We contact your creditors and negotiate lower monthly payments.</li>
+              <li><strong>Legal Protection</strong> – Your accounts are flagged as “under Debt Review” and creditor harassment must stop.</li>
+              <li><strong>Single Affordable Payment</strong> – A Payment Distribution Agency (PDA) manages one monthly payment to distribute to creditors.</li>
+              <li><strong>Debt-Free Certificate</strong> – Once debts are settled you receive a clearance certificate and your credit record is updated.</li>
             </ol>
           </article>
 
           <article>
-            <h2>Why Choose Creditore</h2>
+            <h2>Benefits of Debt Review</h2>
             <ul>
-              <li><strong>Expertise & Experience:</strong> We specialise exclusively in debt restructuring.</li>
-              <li><strong>Personalised Solutions:</strong> Each plan is tailored to your unique financial, personal, and lifestyle factors.</li>
-              <li><strong>Transparent Fees:</strong> No hidden costs or surprise charges—everything is up front.</li>
-              <li><strong>Client First:</strong> We act with empathy, confidentiality, and integrity.</li>
-              <li><strong>Real Results:</strong> We measure success through client relief, improved cash flow, and restored credit health.</li>
+              <li>Protection from creditors — no more threatening calls or letters.</li>
+              <li>Lower monthly instalments — we negotiate affordable payments.</li>
+              <li>Fixed interest rates — prevent your debt from growing.</li>
+              <li>One easy payment — simplify your budget and reduce stress.</li>
+              <li>Keep your assets — stay in your home and keep your car while repaying your debt.</li>
+              <li>Become debt-free — clear your name and rebuild your credit record.</li>
             </ul>
           </article>
 
           <article>
-            <h2>Who We Serve</h2>
-            <p>
-              Our clients are individuals or families under pressure from multiple credit obligations—those whose interest rates, monthly instalments, or credit demands have become unsustainable. We help you when you feel trapped by your debt, when multiple payments are overwhelming, or when creditor demands escalate.
-            </p>
+            <h2>Fees & Process</h2>
+            <p>Fees for Debt Review are regulated by the National Credit Regulator (NCR). You pay nothing upfront — fees are included in your restructured payment plan. We offer a free instalment calculation to show your new monthly payment before you commit.</p>
           </article>
 
           <article>
-            <h2>Our Team</h2>
-            <p>(Here include a short profile of your founder(s), lead consultants, their credentials, experience, and passion for helping clients.)</p>
-          </article>
-
-          <article>
-            <h2>Ethics & Assurance</h2>
-            <p>
-              We are committed to operating with full compliance, confidentiality, and care. We treat all personal data with utmost respect and transparency. While we strive for the best outcomes, results vary based on individual circumstances—no guarantee can be made, though we commit to working diligently on your behalf.
-            </p>
+            <h2>FAQs</h2>
+            <h4>Will my credit score improve after Debt Review?</h4>
+            <p>Yes. After completion you receive a clearance certificate and your credit record is updated to show you are debt-free.</p>
+            <h4>Can I still use credit during Debt Review?</h4>
+            <p>No. You may not take on new credit while under review — this prevents deeper indebtedness.</p>
+            <h4>What happens if I skip a payment?</h4>
+            <p>Missing payments can lead to the review being terminated. Contact us immediately if you have difficulty paying so we can help.</p>
+            <h4>Can I exit Debt Review early?</h4>
+            <p>Yes, if your debts are fully settled or you no longer meet the over-indebted criteria.</p>
+            <h4>How long does the process take?</h4>
+            <p>Timing depends on total debt and repayment capacity, but most clients complete the process within 3–5 years.</p>
           </article>
         </main>
 

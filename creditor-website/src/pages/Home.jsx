@@ -25,12 +25,11 @@ export default function Home() {
       {/* HERO */}
       <header className={styles.hero} style={{ backgroundImage: `url(${whoImg})` }}>
         <div className={styles.heroOverlay}>
-          <h1 className={styles.heroTitle}>Restore Your Credit</h1>
-          <p className={styles.heroSub}>Professional, reliable and tailor-made debt restructuring solutions that help you restore your credit and your life.</p>
+          <h1 className={styles.heroTitle}>Take Control of Your Debt. Reclaim Your Peace of Mind.</h1>
+          <p className={styles.heroSub}>At Creditore Debt Counselling, we help South Africans who are struggling with debt find financial freedom — with care, respect, and professionalism. If your debt feels overwhelming, you are not alone. Our NCR-registered Debt Review process can protect your assets, reduce monthly payments and stop creditor harassment while you get back on track.</p>
           <div className={styles.heroCtas}>
             <a className="btn primary" href="tel:0215696571">Call Us: 021 569 6571</a>
-            <a className="btn primary" href="#" onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('showFeatureUnavailable', { detail: { message: 'WhatsApp contact is not available yet.' } })); }}>WhatsApp</a>
-            <Link className="btn primary" to="/contact">Contact Form</Link>
+            <Link className="btn primary" to="/contact">Book a Free Assessment</Link>
           </div>
         </div>
       </header>

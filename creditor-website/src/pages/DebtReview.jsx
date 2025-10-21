@@ -20,45 +20,67 @@ function DebtReview() {
         <main className="service-main">
           <article>
             <h2>What is Debt Review?</h2>
-            <p>
-              Debt Review is a formal process designed to help customers who are struggling to meet their debt obligations. A debt counsellor will assess
-              your finances and negotiate with creditors on your behalf to reduce monthly payments to a manageable amount. This process provides breathing
-              room while you repay your debts under a structured plan.
-            </p>
+              <p>
+                Debt Review is a formal, NCR-regulated process designed to help people who are over-indebted. A debt counsellor assesses your income,
+                expenses and liabilities, then negotiates with your creditors to arrange a more affordable repayment plan. The goal is to restore financial
+                stability while protecting your assets and stopping creditor harassment.
+              </p>
 
-            <h3>Key considerations</h3>
-            <ul className="feature-list">
-              <li>You may be restricted from applying for new credit while under review.</li>
-              <li>Your status will be recorded with credit bureaus until the review is complete.</li>
-              <li>Debt counselling fees apply, but we provide transparent pricing and support.</li>
-              <li>Payments must continue as agreed under the new plan to remain protected.</li>
-            </ul>
+              <h3>Key considerations</h3>
+              <ul className="feature-list">
+                <li>You may be restricted from applying for new credit while under review.</li>
+                <li>Your status will be recorded with credit bureaus until the review is complete.</li>
+                <li>Debt counselling fees apply but are regulated and included in your restructured plan.</li>
+                <li>Payments must be maintained according to the new proposal to keep protection.</li>
+              </ul>
 
-            <figure className="service-image">
-              <img src={calculatorImg} alt="Debt calculator" />
-              <figcaption className="sr-only">Debt assessment illustration</figcaption>
-            </figure>
+              <figure className="service-image">
+                <img src={calculatorImg} alt="Debt calculator" />
+                <figcaption className="sr-only">Debt assessment illustration</figcaption>
+              </figure>
           </article>
 
           <article>
-            <h2>How the process works</h2>
+            <h2>How It Works</h2>
             <ol className="process-steps">
-              <li>Complete a free debt assessment to determine eligibility.</li>
-              <li>If eligible, submit your application and required documents.</li>
-              <li>We prepare a repayment proposal and negotiate with creditors.</li>
-              <li>If required, the payment plan is submitted to the magistrate’s court for approval.</li>
-              <li>Begin payments according to the new, affordable schedule and receive monthly aftercare.</li>
+              <li><strong>Free Assessment</strong> — We start with a quick, confidential chat to see if you qualify for Debt Review.</li>
+              <li><strong>Proposal to Creditors</strong> — We contact all your creditors and negotiate lower monthly payments on your behalf.</li>
+              <li><strong>Legal Protection</strong> — Your accounts are flagged as "under Debt Review" and creditor harassment must stop.</li>
+              <li><strong>Single Affordable Payment</strong> — You make one monthly payment to a PDA which distributes funds to creditors.</li>
+              <li><strong>Debt-Free Certificate</strong> — Once debts are settled, you receive a clearance certificate and your credit record is updated.</li>
             </ol>
           </article>
 
           <article>
-            <h2>Benefits</h2>
+            <h2>Benefits of Debt Review</h2>
             <ul className="feature-list">
-              <li>Lower monthly instalments and improved affordability.</li>
-              <li>Protection from harassment by creditors while under review.</li>
-              <li>Structured path to becoming debt-free with ongoing support.</li>
-              <li>Access to recommended attorneys and regulated counsellors where required.</li>
+              <li>Protection from creditors — no more threatening calls or letters.</li>
+              <li>Lower monthly instalments — improved affordability.</li>
+              <li>Fixed interest rates — prevents debt from growing while you repay.</li>
+              <li>One easy payment — simplifies budgeting and reduces stress.</li>
+              <li>Keep your assets — stay in your home and keep your car while repaying debt.
+              </li>
+              <li>Become debt-free — clear your name and rebuild your credit record.</li>
             </ul>
+          </article>
+
+          <article>
+            <h2>Fees & Process</h2>
+            <p>Fees are regulated by the NCR and included in your restructured payment plan. You pay nothing upfront. We offer a free instalment calculation to show what your new monthly payment could be.</p>
+          </article>
+
+          <article>
+            <h2>FAQs</h2>
+            <h4>Will my credit score improve after Debt Review?</h4>
+            <p>Yes — upon completion you receive a clearance certificate and your credit record is updated.</p>
+            <h4>Can I still use credit during Debt Review?</h4>
+            <p>No — you may not take on new credit while under review.</p>
+            <h4>What happens if I skip a payment?</h4>
+            <p>Missing payments can lead to termination of the review. Contact us immediately if you have difficulty paying.</p>
+            <h4>Can I exit Debt Review early?</h4>
+            <p>Yes, if debts are fully settled or you no longer meet the criteria.</p>
+            <h4>How long does the process take?</h4>
+            <p>Most clients complete the process within 3–5 years depending on their circumstances.</p>
           </article>
         </main>
 
