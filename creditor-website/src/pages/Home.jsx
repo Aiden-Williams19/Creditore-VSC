@@ -14,7 +14,7 @@ export default function Home() {
     <div className="home">
       {/* Floating social bar (WhatsApp + Facebook) */}
       <div className={styles.floatingSocial} aria-hidden>
-        <a className={styles.whatsapp} href="https://wa.me/0027681120951" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+        <a className={styles.whatsapp} href="#" onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('showFeatureUnavailable', { detail: { message: 'WhatsApp contact is not available yet.' } })); }} aria-label="WhatsApp">
           <FaWhatsapp size={20} color="#fff" />
         </a>
         <a className={styles.facebook} href="https://www.facebook.com/creditoredebt" target="_blank" rel="noreferrer" aria-label="Facebook">
@@ -29,7 +29,7 @@ export default function Home() {
           <p className={styles.heroSub}>Professional, reliable and tailor-made debt restructuring solutions that help you restore your credit and your life.</p>
           <div className={styles.heroCtas}>
             <a className="btn primary" href="tel:0215696571">Call Us: 021 569 6571</a>
-            <a className="btn primary" href="https://wa.me/0027681120951" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a className="btn primary" href="#" onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('showFeatureUnavailable', { detail: { message: 'WhatsApp contact is not available yet.' } })); }}>WhatsApp</a>
             <Link className="btn primary" to="/contact">Contact Form</Link>
           </div>
         </div>
@@ -125,7 +125,7 @@ export default function Home() {
       <section className={styles.regulatory}>
         <p className={styles.regText}>We are regulated by the <strong>NCR</strong>. We adhere to all statutory requirements and place client welfare first.</p>
         <div className={styles.socialLinks}>
-          <a href="https://wa.me/0027681120951" target="_blank" rel="noreferrer" aria-label="WhatsApp" className={`${styles.socialLink} ${styles.whatsapp}`}>WhatsApp</a>
+          <a href="#" aria-label="WhatsApp" className={`${styles.socialLink} ${styles.whatsapp}`} onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('showFeatureUnavailable', { detail: { message: 'WhatsApp contact is not available yet.' } })); }}>WhatsApp</a>
           <a href="https://www.facebook.com/creditoredebt" target="_blank" rel="noreferrer" aria-label="Facebook" className={`${styles.socialLink} ${styles.facebook}`}>Facebook</a>
         </div>
       </section>

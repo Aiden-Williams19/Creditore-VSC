@@ -62,7 +62,9 @@ function Navbar() {
         <li className="nav-cta"><Link to="/contact" className="btn primary">Contact</Link></li>
         <li className="nav-icons">
           <a href="tel:0215696571" aria-label="Call"><FaPhoneAlt color="#fff" /></a>
-          <a href="https://wa.me/0027681120951" aria-label="WhatsApp" target="_blank" rel="noreferrer"><FaWhatsapp color="#fff" /></a>
+          <a href="#" aria-label="WhatsApp" onClick={(e) => { e.preventDefault(); window.dispatchEvent(new CustomEvent('showFeatureUnavailable', { detail: { message: 'WhatsApp contact is not available yet.' } })); }}>
+            <FaWhatsapp color="#fff" />
+          </a>
         </li>
       </ul>
     </nav>
