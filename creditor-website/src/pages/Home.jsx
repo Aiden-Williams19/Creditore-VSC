@@ -91,15 +91,45 @@ export default function Home() {
       <section className={styles.stepsSection}>
         <h2 className={styles.sectionTitle}>How it works</h2>
         <div className={styles.stepsGrid}>
-          {[1,2,3,4,5].map(n => (
-            <div key={n} className={styles.step}>
-              <div className={styles.stepIcon} aria-hidden>
-                <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="11" fill="#1f9d55"/></svg>
-              </div>
-              <h3>Step {n}</h3>
-              <p>Step {n} description — brief, clear and actionable.</p>
+          <div className={styles.step}>
+            <div className={styles.stepIcon} aria-hidden>
+              <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="11" fill="#1f9d55"/></svg>
             </div>
-          ))}
+            <h3>STEP 1</h3>
+            <p><strong>Free Assessment</strong> — We start with a quick, confidential chat to see if you qualify for Debt Review. This helps us understand your income, expenses and debts.</p>
+          </div>
+
+          <div className={styles.step}>
+            <div className={styles.stepIcon} aria-hidden>
+              <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="11" fill="#1f9d55"/></svg>
+            </div>
+            <h3>STEP 2</h3>
+            <p><strong>Proposal to Creditors</strong> — We contact all your creditors and negotiate lower monthly payments on your behalf.</p>
+          </div>
+
+          <div className={styles.step}>
+            <div className={styles.stepIcon} aria-hidden>
+              <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="11" fill="#1f9d55"/></svg>
+            </div>
+            <h3>STEP 3</h3>
+            <p><strong>Legal Protection</strong> — Your accounts are flagged as “under Debt Review”, which means creditors and collection agencies must stop calling or threatening legal action.</p>
+          </div>
+
+          <div className={styles.step}>
+            <div className={styles.stepIcon} aria-hidden>
+              <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="11" fill="#1f9d55"/></svg>
+            </div>
+            <h3>STEP 4</h3>
+            <p><strong>Single Affordable Payment</strong> — You make one simple monthly payment to a Payment Distribution Agency (PDA), who distributes it to your creditors.</p>
+          </div>
+
+          <div className={styles.step}>
+            <div className={styles.stepIcon} aria-hidden>
+              <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="11" fill="#1f9d55"/></svg>
+            </div>
+            <h3>STEP 5</h3>
+            <p><strong>Debt-Free Certificate</strong> — When all your debts are settled, we issue a clearance certificate and your credit record is updated to show you are debt-free.</p>
+          </div>
         </div>
       </section>
 
