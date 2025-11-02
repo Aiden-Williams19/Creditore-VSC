@@ -36,7 +36,6 @@ function DebtReview() {
 
               <figure className="service-image">
                 <img src={calculatorImg} alt="Debt calculator" />
-                <figcaption className="sr-only">Debt assessment illustration</figcaption>
               </figure>
           </article>
 

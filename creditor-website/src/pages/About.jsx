@@ -22,6 +22,8 @@ function About() {
           <article>
             <h2>Our Mission</h2>
             <p>To help over-indebted South Africans regain financial stability, protect their assets, and achieve lasting peace of mind—without judgment or shame.</p>
+            <p>To see every South African family experience financial freedom, confidence, and hope—one successful case at a time.</p>
+
           </article>
 
           <article>
@@ -32,22 +34,6 @@ function About() {
               <li>Respectful, confidential, and professional service</li>
               <li>A dedicated debt counsellor who supports you every step of the way</li>
             </ul>
-          </article>
-
-          <article>
-            <h2>Our Vision</h2>
-            <p>To see every South African family experience financial freedom, confidence, and hope—one successful case at a time.</p>
-          </article>
-
-          <article>
-            <h2>How We Work</h2>
-            <ol>
-              <li><strong>Free Assessment</strong> – We start with a quick, confidential chat to see if you qualify for Debt Review.</li>
-              <li><strong>Proposal to Creditors</strong> – We contact your creditors and negotiate lower monthly payments.</li>
-              <li><strong>Legal Protection</strong> – Your accounts are flagged as “under Debt Review” and creditor harassment must stop.</li>
-              <li><strong>Single Affordable Payment</strong> – A Payment Distribution Agency (PDA) manages one monthly payment to distribute to creditors.</li>
-              <li><strong>Debt-Free Certificate</strong> – Once debts are settled you receive a clearance certificate and your credit record is updated.</li>
-            </ol>
           </article>
 
           <article>
@@ -89,6 +75,19 @@ function About() {
             <p className="large">Call: <strong>021 569 6571</strong></p>
             <p className="large">WhatsApp: <strong>068 112 0951</strong></p>
             <Link className="btn primary" to="/contact">Start Application</Link>
+          </div>
+          <br />
+          <div>
+             <article className="contact-box"> 
+            <h2>How We Work</h2>
+            <ol>
+              <li><strong>Free Assessment</strong> – We start with a quick, confidential chat to see if you qualify for Debt Review.</li>
+              <li><strong>Proposal to Creditors</strong> – We contact your creditors and negotiate lower monthly payments.</li>
+              <li><strong>Legal Protection</strong> – Your accounts are flagged as “under Debt Review” and creditor harassment must stop.</li>
+              <li><strong>Single Affordable Payment</strong> – A Payment Distribution Agency (PDA) manages one monthly payment to distribute to creditors.</li>
+              <li><strong>Debt-Free Certificate</strong> – Once debts are settled you receive a clearance certificate and your credit record is updated.</li>
+            </ol>
+          </article>
           </div>
         </aside>
       </section>
